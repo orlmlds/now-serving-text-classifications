@@ -1,5 +1,14 @@
 # now-serving-text-classifications
 
+## Recommended Software 
+
+[Jupyter Notebook](http://jupyter.org/) - demonstrate how to build the classification models.
+
+[Docker](https://www.docker.com/) - run the application. 
+
+[PyCharm](https://www.jetbrains.com/pycharm/) - navigate the project, make API requests, and more. 
+
+
 ## Setup
 
 ### Git
