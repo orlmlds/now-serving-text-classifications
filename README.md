@@ -2,6 +2,13 @@
 
 ## Setup
 
+### Git
+
+If the repo has not already been installed, use the following commands to clone the repository and change to the directory.
+
+    git clone git@github.com:orlmlds/now-serving-text-classifications.git
+    cd now-serving-text-classifications/
+
 ### Python
 
 This project requires python 3.6+. Confirm your python version by running:
