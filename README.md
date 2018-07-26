@@ -19,12 +19,13 @@ Use the requirements file to download project dependencies.
     
     pip install -r requirements.txt
     
-Use the embeddings library to download the embeddings. **NOTE:** This command downloads a large file ~2GB and may take a while to complete.
+Use the embeddings library to download the embeddings. **NOTE:** This command downloads a large file ~2GB and may take a while to complete. If the command does not begin a download, the file already exists.
 
-    python create_embeddings.py 
+    python NowServing/scripts/create_embeddings.py  
 
 ### Downloads 
 Download the Consumer Complaint Database (589.4 MB) file from [here](https://catalog.data.gov/dataset/consumer-complaint-database). This will be used in the bag of words classifier. 
 
 ## Run
 
+WIP
