@@ -18,7 +18,10 @@ This project requires python 3.6+. Confirm your python version by running:
 Use the requirements file to download project dependencies.
     
     pip install -r requirements.txt
+    
+    python create_embeddings.py 
 
+**NOTE** The command `python create_embeddings.py` downloads a large file ~2GB and may take a while to complete.
 
 ### Downloads 
 Download the Consumer Complaint Database (589.4 MB) file from [here](https://catalog.data.gov/dataset/consumer-complaint-database). This will be used in the bag of words classifier. 
