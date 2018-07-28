@@ -56,11 +56,6 @@ Download the Consumer Complaint Database (589.4 MB) file from [here](https://cat
 
 ### Sample Request Body for Complaint Predictions
 
-This example is using the full stack of pyNLU - including NER and NIC. Note that the below json request is formatted for
-aesthetics.
-
-Simple
-
 ```json
     curl -H "Content-Type: application/json" -X POST -d '{"narrative": "Dude my credit score sucks this is bullshit"}' http://0.0.0.0:3000/handle_complaint_request
 ```
@@ -78,8 +73,6 @@ Simple
 | txt            | yes      | text message                          |
 
 ### Sample Request Body for Sentiment Predictions
-
-Simple
 
 ```json
     curl -H "Content-Type: application/json" -X POST -d '{"txt": "this is terrible"}' http://0.0.0.0:3000/handle_sentiment_request
