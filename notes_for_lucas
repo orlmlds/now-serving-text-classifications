@@ -1,0 +1,96 @@
+# Lucas
+	- I like robots
+	- I like simulations
+
+
+# Project Structure
+
+	# You're repository structure should model the communication networks in your team (so should the project)
+	
+	# What are we trying to accomplish?
+		- Serve and maintain machine learning predictions over http
+
+	# What tools am I going to use?
+		- Flask (What is flask?)
+		- Docker
+		- Keras
+
+	# What do I want out of my project structure?
+		- Intuitive
+			- Easy to navigate
+			- Everything belongs somewhere
+			- filenames	
+
+		- Small startup cost
+			- comments
+			- examples		
+			- notebooks
+			- README.txt
+			- examples	
+
+		- Easy to maintain
+			- seperation of concerns (lib) / multiple people working in the same repo
+			- scripts
+			- tests
+
+
+	# Not So Great
+	https://github.com/xiaohan2012/twitter-sent-dnn
+
+
+	# go over each file, line by line
+
+	# Why am I bothering?
+
+		- The earlier you pick a convention and stick to the easier it will be to use
+		- Larger thing I want to accomplish, is start a discussion about what makes code good?
+
+	# What makes code good?
+
+	Abstraction - When I write a solution, I try to make it as general as possible 
+	Encapsulation - The code should speak for itself, I don't need to understand how your code works to use it
+	Polymorphism - Keep to conventions
+
+
+	# Knowing your audience
+
+		- if you're an engineer, don't assume your fellow data scientists / engineers/ programmers know your weird acronyms or obscure design patterns
+		- if you're a data scientist, keep in mind you're not writting algorithms, your code needs to be easily understandable
+			- https://github.com/RasaHQ/rasa_nlu/blob/d7c6f0dd4f24642dfa62d62b56eb0014c30da045/rasa_nlu/classifiers/embedding_intent_classifier.py#L342
+
+
+	# Let's hit the code
+
+		- Top to Bottom Approach
+			- bottom up
+			- setup env
+			- endpoint
+			- app
+
+
+
+	# Random Code Tips
+		# Scaling
+			- Docker
+				- docker swarm
+					- https://www.vioan.eu/blog/2016/06/24/scale-your-python-app-with-docker-and-haproxy/
+				- connecting to external services
+					- on mac use `host.docker.internal`
+					- use --net="host"
+			
+
+			- wsgi vs uwsgi
+				-https://medium.com/ymedialabs-innovation/deploy-flask-app-with-nginx-using-gunicorn-and-supervisor-d7a93aa07c18
+				- uwsgi
+					- https://uwsgi-docs.readthedocs.io/en/latest/articles/TheArtOfGracefulReloading.html?highlight=zerg%20dance
+					- lazy apps
+						- https://uwsgi-docs.readthedocs.io/en/latest/ThingsToKnow.html
+						```
+						uWSGI tries to (ab)use the Copy On Write semantics of the fork() call whenever possible. By default it will fork after having loaded your applications to share as much of their memory as possible. If this behavior is undesirable for some reason, use the lazy-apps option. This will instruct uWSGI to load the applications after each worker’s fork(). Beware as there is an older options named lazy that is way more invasive and highly discouraged (it is still here only for backward compatibility)
+						```
+
+		# Keras
+			- Memory leak! 
+
+
+
