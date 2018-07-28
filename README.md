@@ -40,39 +40,39 @@ Download the Consumer Complaint Database (589.4 MB) file from [here](https://cat
 
     python flaskr/app.py
     
-# Request
+## Request
 
-## Complaints 
+### Complaints 
 
-### HTTP Request
+#### HTTP Request
 
     POST /handle_complaint_request
 
-### Parameters
+#### Parameters
 
 | Field                | Required | Description                                      |
 |:---------------------|:---------|:-------------------------------------------------|
 | narrative            | yes      | Complaint narrative                          |
 
-### Sample Request Body for Complaint Predictions
+#### Sample Request Body for Complaint Predictions
 
 ```json
     curl -H "Content-Type: application/json" -X POST -d '{"narrative": "Dude my credit score sucks this is bullshit"}' http://0.0.0.0:3000/handle_complaint_request
 ```
 
-## Sentiment 
+### Sentiment 
 
-### HTTP Request
+#### HTTP Request
 
     POST /handle_sentiment_request
 
-### Parameters
+#### Parameters
 
 | Field                | Required | Description                                      |
 |:---------------------|:---------|:-------------------------------------------------|
 | txt            | yes      | text message                          |
 
-### Sample Request Body for Sentiment Predictions
+#### Sample Request Body for Sentiment Predictions
 
 ```json
     curl -H "Content-Type: application/json" -X POST -d '{"txt": "this is terrible"}' http://0.0.0.0:3000/handle_sentiment_request
